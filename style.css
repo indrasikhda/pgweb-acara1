@@ -1,0 +1,108 @@
+/* Import font dari Google Fonts untuk tampilan yang lebih modern */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Pengaturan Dasar Body */
+body {
+    font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Warna latar belakang abu-abu muda */
+    color: #333; /* Warna teks utama */
+}
+
+/* Kontainer utama untuk mengatur layout di tengah */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff; /* Latar belakang konten putih */
+    padding: 25px 40px;
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+}
+
+/* Header Utama */
+.main-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-header h1 {
+    color: #2c3e50; /* Warna biru tua */
+    margin-bottom: 5px;
+}
+
+.main-header h3 {
+    color: #3498db; /* Warna biru cerah */
+    margin-top: 0;
+    font-weight: 400;
+}
+
+/* Garis Pemisah */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 30px 0;
+}
+
+/* Judul setiap bagian (section) */
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Paragraf Deskripsi */
+.description p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Tabel Kependudukan */
+.population-table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan spasi antar border */
+    margin-top: 20px;
+}
+
+.population-table th, .population-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.population-table th {
+    background-color: #3498db; /* Latar header tabel */
+    color: white; /* Teks header tabel */
+    text-align: center;
+}
+
+.population-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra-striping untuk baris genap */
+}
+
+.population-table tr:hover {
+    background-color: #f1f1f1; /* Efek hover pada baris */
+}
+
+.population-table .total-row {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Daftar Kecamatan */
+.district-list {
+    list-style-type: decimal; /* Menggunakan nomor */
+    padding-left: 20px;
+    columns: 2; /* Membuat daftar menjadi 2 kolom agar lebih rapi */
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.district-list li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
