@@ -1,108 +1,78 @@
-/* Import font dari Google Fonts untuk tampilan yang lebih modern */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Reset margin/padding bawaan browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-/* Pengaturan Dasar Body */
 body {
-    font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4; /* Warna latar belakang abu-abu muda */
-    color: #333; /* Warna teks utama */
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-/* Kontainer utama untuk mengatur layout di tengah */
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: #fff; /* Latar belakang konten putih */
-    padding: 25px 40px;
-    border-radius: 10px; /* Sudut melengkung */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+main {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Header Utama */
-.main-header {
-    text-align: center;
-    margin-bottom: 20px;
+/* Judul */
+h1 {
+  color: #d62828;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.main-header h1 {
-    color: #2c3e50; /* Warna biru tua */
-    margin-bottom: 5px;
+h3 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-.main-header h3 {
-    color: #3498db; /* Warna biru cerah */
-    margin-top: 0;
-    font-weight: 400;
+h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #003049;
 }
 
-/* Garis Pemisah */
-hr {
-    border: 0;
-    height: 1px;
-    background: #ddd;
-    margin: 30px 0;
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
-/* Judul setiap bagian (section) */
-h2 {
-    color: #2980b9;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+table, th, td {
+  border: 1px solid #ccc;
 }
 
-/* Paragraf Deskripsi */
-.description p {
-    text-align: justify;
-    margin-bottom: 15px;
+th {
+  background-color: #003049;
+  color: #fff;
+  padding: 10px;
 }
 
-/* Tabel Kependudukan */
-.population-table {
-    width: 100%;
-    border-collapse: collapse; /* Menghilangkan spasi antar border */
-    margin-top: 20px;
+td {
+  text-align: center;
+  padding: 8px;
 }
 
-.population-table th, .population-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
+tr:nth-child(even) {
+  background-color: #f1f1f1;
 }
 
-.population-table th {
-    background-color: #3498db; /* Latar header tabel */
-    color: white; /* Teks header tabel */
-    text-align: center;
+/* List kecamatan */
+ol {
+  padding-left: 20px;
 }
 
-.population-table tr:nth-child(even) {
-    background-color: #f9f9f9; /* Zebra-striping untuk baris genap */
-}
-
-.population-table tr:hover {
-    background-color: #f1f1f1; /* Efek hover pada baris */
-}
-
-.population-table .total-row {
-    background-color: #2c3e50;
-    color: white;
-    font-weight: bold;
-}
-
-/* Daftar Kecamatan */
-.district-list {
-    list-style-type: decimal; /* Menggunakan nomor */
-    padding-left: 20px;
-    columns: 2; /* Membuat daftar menjadi 2 kolom agar lebih rapi */
-    -webkit-columns: 2;
-    -moz-columns: 2;
-}
-
-.district-list li {
-    margin-bottom: 10px;
-    padding-left: 5px;
+ol li {
+  margin: 4px 0;
+  color: #444;
 }
